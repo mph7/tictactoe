@@ -82,37 +82,37 @@ def confereSeVenceu(player):
     if player == 1:
         if jogo[0] == "X" and jogo[1] == "X" and jogo[2] == "X":
             return 1, True
-        elif jogo[3] == "X" and jogo[4] == "X" and jogo[5] == "X":
+        if jogo[3] == "X" and jogo[4] == "X" and jogo[5] == "X":
             return 1, True
-        elif jogo[6] == "X" and jogo[7] == "X" and jogo[8] == "X":
+        if jogo[6] == "X" and jogo[7] == "X" and jogo[8] == "X":
             return 1, True
-        elif jogo[0] == "X" and jogo[3] == "X" and jogo[6] == "X":
+        if jogo[0] == "X" and jogo[3] == "X" and jogo[6] == "X":
             return 1, True
-        elif jogo[1] == "X" and jogo[4] == "X" and jogo[7] == "X":
+        if jogo[1] == "X" and jogo[4] == "X" and jogo[7] == "X":
             return 1, True
-        elif jogo[2] == "X" and jogo[5] == "X" and jogo[8] == "X":
+        if jogo[2] == "X" and jogo[5] == "X" and jogo[8] == "X":
             return 1, True
-        elif jogo[0] == "X" and jogo[4] == "X" and jogo[8] == "X":
+        if jogo[0] == "X" and jogo[4] == "X" and jogo[8] == "X":
             return 1, True
-        elif jogo[2] == "X" and jogo[4] == "X" and jogo[6] == "X":
+        if jogo[2] == "X" and jogo[4] == "X" and jogo[6] == "X":
             return 1, True
 
     elif player == 2:
         if jogo[0] == "O" and jogo[1] == "O" and jogo[2] == "O":
             return 2, True
-        elif jogo[3] == "O" and jogo[4] == "O" and jogo[5] == "O":
+        if jogo[3] == "O" and jogo[4] == "O" and jogo[5] == "O":
             return 2, True
-        elif jogo[6] == "O" and jogo[7] == "O" and jogo[8] == "O":
+        if jogo[6] == "O" and jogo[7] == "O" and jogo[8] == "O":
             return 2, True
-        elif jogo[0] == "O" and jogo[3] == "O" and jogo[6] == "O":
+        if jogo[0] == "O" and jogo[3] == "O" and jogo[6] == "O":
             return 2, True
-        elif jogo[1] == "O" and jogo[4] == "O" and jogo[7] == "O":
+        if jogo[1] == "O" and jogo[4] == "O" and jogo[7] == "O":
             return 2, True
-        elif jogo[2] == "O" and jogo[5] == "O" and jogo[8] == "O":
+        if jogo[2] == "O" and jogo[5] == "O" and jogo[8] == "O":
             return 2, True
-        elif jogo[0] == "O" and jogo[4] == "O" and jogo[8] == "O":
+        if jogo[0] == "O" and jogo[4] == "O" and jogo[8] == "O":
             return 2, True
-        elif jogo[2] == "O" and jogo[4] == "O" and jogo[6] == "O":
+        if jogo[2] == "O" and jogo[4] == "O" and jogo[6] == "O":
             return 2, True
 
     return 0, False
