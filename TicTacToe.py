@@ -1,19 +1,6 @@
-jogo = [
-    " ",
-    " ",
-    " ",
-    " ",
-    " ",
-    " ",
-    " ",
-    " ",
-    " ",
-]
-jogador = True  # True == 1, False == 2
-
-
+jogo = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',]
 def main():
-    global XO, jogador
+    global XO
     player = 1
 
     explicacao()
@@ -32,16 +19,16 @@ def main():
                 % (player, peca))
             try:
                 opcao = int(opcao)
-            except:
-                print("Opção Inválida")
+            except ValueError:
+                print('Opção Inválida')
                 continue
             else:
                 if opcao in range(1, 10) and verificaJogada(opcao):
                     break
-                print("Opção inválida, escolha uma posição vazia entre 1 e 9.")
-
-        jogo[opcao - 1] = peca
-        winner, venceu = confereSeVenceu(player)
+                print('Opção inválida, escolha uma posição vazia entre 1 e 9.')
+        
+        jogo[opcao-1] = peca
+        _, venceu = confereSeVenceu(player)
         if venceu:
             break
         if player == 1:
@@ -80,7 +67,6 @@ def verificaJogada(choice):
 
 
 def confereSeVenceu(player):
-    winnerPlayer = 0
     if player == 1:
         if jogo[0] == "X" and jogo[1] == "X" and jogo[2] == "X":
             return 1, True
@@ -118,6 +104,5 @@ def confereSeVenceu(player):
             return 2, True
 
     return 0, False
-
 
 main()
