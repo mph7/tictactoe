@@ -12,7 +12,6 @@ jogo = [
 
 
 def main():
-    global XO
     player = 1
 
     explicacao()
